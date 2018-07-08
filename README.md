@@ -33,7 +33,7 @@
 <br/>
 
 # INFORMATION:
-	* dellallphoto		"Delete All Post IG"			(WORK & TESTED)
+	* dellallphoto			"Delete All Post IG"			(WORK & TESTED)
 	* fah				"SELECTED WITH HASTAG IG"		(WORK & TESTED)
 	* fftauto			"SELECTED WITH TARGET IG"		(WORK & TESTED)
 	* fft				"SELECTED WITH TARGET IG"		(WORK & TESTED)
@@ -41,7 +41,7 @@
 	* flaauto			"SELECTED WITH LOCATION IG"		(WORK & TESTED)
 	* flmauto			"SELECTED WITH MEDIA IG"		(WORK & TESTED)
 	* unfollall			"UNFOLOW ALL FOLLOWING IG"		(WORK & TESTED)
-	* unfollnotfollback		"UNFOLLOW NOT FOLLOWBACK IG"	(WORK & TESTED)
+	* unfollnotfollback		"UNFOLLOW NOT FOLLOWBACK IG"	 	(WORK & TESTED)
 	* botlike			"LIKE/LOVE TIMELINE IG"			(WORK & TESTED)
 	* botlike2			"LIKE/LOVE TIMELINE IG"			(WORK & TESTED)
 	* bomlike			"BOM LIKE POST TARGET"			(WORK & TESTED)
