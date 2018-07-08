@@ -23,7 +23,9 @@ const questionTools = [
         "[7] Follow Account By Media",
         "[8] Follow Account By Hastag",
         "[9] Follow Account By Location",
-		"[10] IKIGANTENG",
+        "[10] Follow Followers Target No Like",
+	    "[11] Follow Followers Target No Comment & Like",
+        "[12] Bom Like Post Target",
         "\n"
       ] 
   }
@@ -80,11 +82,19 @@ const main = async () => {
         await flaauto();
         break;
 		
-		case "[10] IKIGANTENG":
-        const iki = require('./iki.js');
-        await iki();
+	   case "[10] Follow Followers Target No Like":
+        const fft = require('./fft.js');
+        await fft();
         break;
 
+	   case "[11] Follow Followers Target No Comment & Like":
+        const fftold = require('./fftold.js');
+        await fftold();
+        break;
+	   case "[10] Bom Like Post Target":
+        const bomlike = require('./bomlike.js');
+        await bomlike();
+        break;
       default:
         console.log('\nERROR:\n[?] Aw, Snap! \n[!] Something went wrong while displaying this program!\n[!] Please try again!');
     }
