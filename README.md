@@ -42,8 +42,8 @@
 	* sudo yum -y install nodejs
 
 	=========== Basic Usage ==============
-	* git clone https://github.com/teamsyntaxid/bot-ig.git
-	* cd bot-ig
+	* git clone https://github.com/ikiganteng/bot-igeh/
+	* cd bot-igeh
 	* unzip node_modules.zip
 	* node index.js
 	* Then select the tool you want to use!
@@ -99,4 +99,4 @@
 	* Fixing and Testing by Putu Syntax
 	* SGB TEAM REBORN
 	* BC0DE.NET | NAONLAH.NET - WingKocoli
-	* Ilyasa Fathur Rahman
+	* Ilyasa Fathur Rahman (Tutorial dari VPS)
