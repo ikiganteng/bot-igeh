@@ -160,7 +160,7 @@ const Excute = async function(User, TargetUsername, Text, Sleep, mysyntx){
 				console.log(chalk`> ${media.link} => ${PrintOut} [${ranText}]`);
 			}))
 			console.log(chalk`{yellow \n [#][>] Delay For ${sleep} MiliSeconds [<][#] \n}`)
-			    await delay(Sleep)
+			    await delay(Sleep);
 		}
     console.log(chalk`{bold.green [+] Bom Komen Post Succsess}`)
 	} catch (err) {
