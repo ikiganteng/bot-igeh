@@ -24,8 +24,9 @@ const questionTools = [
         "[8] Follow Account By Hastag",
         "[9] Follow Account By Location",
         "[10] Follow Followers Target No Like",
-	    "[11] Follow Followers Target No Comment & Like",
+	"[11] Follow Followers Target No Comment & Like",
         "[12] Bom Like Post Target",
+	"[12] Bom Komen Post Target",
         "\n"
       ] 
   }
@@ -91,9 +92,13 @@ const main = async () => {
         const fftold = require('./fftold.js');
         await fftold();
         break;
-	   case "[10] Bom Like Post Target":
+	   case "[12] Bom Like Post Target":
         const bomlike = require('./bomlike.js');
         await bomlike();
+        break;
+	 case "[13] Bom Komen Post Target":
+        const bomkomen = require('./bomkomen.js');
+        await bomkomen();
         break;
       default:
         console.log('\nERROR:\n[?] Aw, Snap! \n[!] Something went wrong while displaying this program!\n[!] Please try again!');
