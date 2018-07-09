@@ -45,6 +45,7 @@
 	* botlike			"LIKE/LOVE TIMELINE IG"			(WORK & TESTED)
 	* botlike2			"LIKE/LOVE TIMELINE IG"			(WORK & TESTED)
 	* bomlike			"BOM LIKE POST TARGET"			(WORK & TESTED)
+	* bomkomen			"BOM KOMEN POST TARGET"			(WORK & TESTED)
 <br/>
 
 # WARNING
