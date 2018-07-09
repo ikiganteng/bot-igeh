@@ -30,6 +30,40 @@
 	* ls
 	* node index.js
 	* Then select the tool you want to use!
+	
+<br/>
+
+# For VPS:
+	* sudo yum -y update
+	* sudo yum -y install git
+	* sudo yum -y install unzip
+	* sudo yum -y install screen
+	* curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+	* sudo yum -y install nodejs
+
+	=========== Basic Usage ==============
+	* git clone https://github.com/teamsyntaxid/bot-ig.git
+	* cd bot-ig
+	* unzip node_modules.zip
+	* node index.js
+	* Then select the tool you want to use!
+	
+	Kita buat session dulu ya!
+	* screen -S Instagram1 (Instagram1 = Nama Session)
+	Keluar dari session
+	* CTRL + A + D
+	Jika ingin mngecek prosesnya / kembali ke session Instagram1
+	* screen -r Instagram1
+	Kita buat session baru dulu ya!
+	* screen -S Instagram2 (Instagram2 = Nama Session Baru)
+	Keluar dari session
+	* CTRL + A + D
+	Jika ingin mngecek prosesnya / kembali ke session Instagram2
+	* screen -r Instagram2
+	Cara memberhentikan/stop tools
+	* screen -S Instagram1 -X kill (Instagram1 = Nama Session yang ingin di berhentikan)
+	Untuk melihat list session yang sedang berjalan
+	* screen -list
 <br/>
 
 # INFORMATION:
@@ -65,3 +99,4 @@
 	* Fixing and Testing by Putu Syntax
 	* SGB TEAM REBORN
 	* BC0DE.NET | NAONLAH.NET - WingKocoli
+	* Ilyasa Fathur Rahman
