@@ -190,7 +190,7 @@ const Excute = async function(User, TargetUsername, Sleep, mysyntx){
         timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
         await Promise.all(TargetResult[i].map(async(akun) => {
           if (!getFollowers.includes(akun.id) && akun.params.isPrivate === false) {
-			var Text = fs.readFileSync('text.txt', 'utf8').split('|');
+	    var Text = fs.readFileSync('komen.txt', 'utf8').split('|');
             var ranText = Text[Math.floor(Math.random() * Text.length)];
             const ngeDo = await CommentAndLike(doLogin.session, akun.id, ranText)
             console.log(chalk`[{magenta ${timeNow}}] {bold.green [>]}${akun.params.username} => ${ngeDo}`)
