@@ -4,6 +4,7 @@
 	* unzip node_modules.zip
 	* node index.js
 	* Then select the tool you want to use!
+	* or node filename (to facilitate)
 <br/>
 
 # For PC/Laptop ONLY:
@@ -17,6 +18,7 @@
 	* To View The Contents Of a folder in bash, type: "ls" (without "")
 	* To Run The Program in bash, type: "node index.js" (without "")
 	* Then select the tool you want to use!
+	* or node filename (to facilitate)
 <br/>
 
 # For TERMUX ONLY:
@@ -30,6 +32,7 @@
 	* ls
 	* node index.js
 	* Then select the tool you want to use!
+	* or node filename (to facilitate)
 	
 <br/>
 
@@ -47,6 +50,7 @@
 	* unzip node_modules.zip
 	* node index.js
 	* Then select the tool you want to use!
+	* or node filename (to facilitate)
 	
 	Kita buat session dulu ya!
 	* screen -S Instagram1 (Instagram1 = Nama Session)
@@ -67,7 +71,7 @@
 <br/>
 
 # INFORMATION:
-	* dellallphoto			"Delete All Post IG"			(WORK & TESTED)
+	* dellallphoto			"DELETE ALL POST IG"			(WORK & TESTED)
 	* fah				"SELECTED WITH HASTAG IG"		(WORK & TESTED)
 	* fftauto			"SELECTED WITH TARGET IG"		(WORK & TESTED)
 	* fft				"SELECTED WITH TARGET IG"		(WORK & TESTED)
@@ -89,9 +93,11 @@
 <br/>
 
 # UPDATE
-	1. Fix Error No Detect Followers Target
+    1. Fix Error No Detect Followers Target
     2. Input Target/delay Manual (ITTYW)
     3. + Improvements In Display Program
+    4. FFTAUTO & FFT must make file komen.txt and save your comment in there
+    5. BOMLIKE & BOMKOMEN if you want unlimited read unli_bom.txt
 <br/>
 
 # SPECIAL THANKS TO:
