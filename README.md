@@ -11,7 +11,7 @@
 	* Download NodeJS 			(https://nodejs.org/en/download/) *Choose .msi & 32bit/64bit
 	* INSTALL GIT for Windows & NodeJS
 	* Download File on Github (https://github.com/ikiganteng/bot-igeh)
-	* Extract File bot-ig-master and enter the folder
+	* Extract File bot-igeh and enter the folder
 	* Right Click on Mouse, Then Select "Git Bash Here" (Make sure you are in the bot-igeh folder!!!)
 	* Then type: unzip node_modules.zip
 	* To View The Contents Of a folder in bash, type: "ls" (without "")
