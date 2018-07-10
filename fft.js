@@ -5,6 +5,8 @@ const _ = require('lodash');
 const rp = require('request-promise');
 const S = require('string');
 const inquirer = require('inquirer');
+var fs = require('fs'),
+    request = require('request');
 
 const User = [
 {
@@ -30,15 +32,6 @@ const User = [
   type:'input',
   name:'target',
   message:'[>] Insert Username Target (Without @[at]):',
-  validate: function(value){
-    if(!value) return 'Can\'t Empty';
-    return true;
-  }
-},
-{
-  type:'input',
-  name:'text',
-  message:'[>] Insert Text Comment (Use [|] if more than 1):',
   validate: function(value){
     if(!value) return 'Can\'t Empty';
     return true;
@@ -123,15 +116,6 @@ async function ngeComment(session, id, text){
   }
 }
 
-async function ngeLike(session, id){
-  try{
-    await Client.Like.create(session, id)
-    return true;
-  } catch(e) {
-    return false;
-  }
-}
-
 const Comment = async function(session, accountId, text){
   var result;
 
@@ -175,7 +159,7 @@ const Followers = async function(session, id){
   }
 }
 
-const Excute = async function(User, TargetUsername, Text, Sleep, mysyntx){
+const Excute = async function(User, TargetUsername, Sleep, mysyntx){
   try {
     console.log(chalk`{yellow \n [?] Try to Login . . .}`)
     const doLogin = await Login(User);
@@ -195,6 +179,7 @@ const Excute = async function(User, TargetUsername, Text, Sleep, mysyntx){
         timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
         await Promise.all(TargetResult[i].map(async(akun) => {
           if (!getFollowers.includes(akun.id) && akun.params.isPrivate === false) {
+            var Text = fs.readFileSync('text.txt', 'utf8').split('|');
             var ranText = Text[Math.floor(Math.random() * Text.length)];
             const ngeDo = await Comment(doLogin.session, akun.id, ranText)
             console.log(chalk`[{magenta ${timeNow}}] {bold.green [>]}${akun.params.username} => ${ngeDo}`)
@@ -218,7 +203,7 @@ console.log(chalk`
   {bold.cyan
   —————————————————— [INFORMATION] ————————————————————
 
-  [?] {bold.green FFTauto | Using Account/User Target!}
+  [?] {bold.green FFTauto | Follow & Comment Only!}
 
   ——————————————————  [THANKS TO]  ————————————————————
   [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
@@ -230,12 +215,11 @@ console.log(chalk`
   1. Input Target/delay Manual (ITTYW)
   —————————————————————————————————————————————————————}
       `);
-
+//ikiganteng
 inquirer.prompt(User)
 .then(answers => {
-  var text = answers.text.split('|');
   Excute({
     username:answers.username,
     password:answers.password
-  },answers.target,text,answers.sleep,answers.mysyntx);
+  },answers.target,answers.sleep,answers.mysyntx);
 })
