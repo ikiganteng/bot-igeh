@@ -136,6 +136,9 @@ const CommentAndLike = async function(session, accountId, text){
 	}
 
 	if (result.length > 0) {
+		if (result[0].params.hasLiked) {
+        return chalk`{bold.blue Already Follow,Liked & Comment}`;
+        }
 		const task = [
 		ngefollow(session, accountId),
 		ngeComment(session, result[0].params.id, text),
