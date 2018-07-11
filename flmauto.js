@@ -219,7 +219,7 @@ console.log(chalk`
   1. Input Target/delay Manual (ITTYW)
   —————————————————————————————————————————————————————}
       `);
-
+//ikiganteng
 inquirer.prompt(User)
 .then(answers => {
 	var text = answers.text.split('|');
