@@ -79,7 +79,7 @@ const doLogin = async (params) => {
   }
 }
 
-async function ngeComment(session, id, text){
+async function doComment(session, id, text){
   try {
     await Client.Comment.create(session, id, text);
     return true;
@@ -88,7 +88,7 @@ async function ngeComment(session, id, text){
   }
 }
 
-async function ngeLike(session, id){
+async function doLike(session, id){
   try{
     await Client.Like.create(session, id)
     return true;
