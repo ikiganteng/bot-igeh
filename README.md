@@ -73,6 +73,7 @@
 # INFORMATION:
 	* dellallphoto			"DELETE ALL POST IG"			(WORK & TESTED)
 	* fah				"SELECTED WITH HASTAG IG"		(WORK & TESTED)
+	* fftsleep			"SELECTED WITH TARGET IG"		(WORK & TESTED)
 	* fftauto			"SELECTED WITH TARGET IG"		(WORK & TESTED)
 	* fft				"SELECTED WITH TARGET IG"		(WORK & TESTED)
 	* fftold			"SELECTED WITH TARGET IG"		(WORK & TESTED)
@@ -98,6 +99,7 @@
     3. + Improvements In Display Program
     4. FFTAUTO & FFT must make file komen.txt and save your comment in there
     5. BOMLIKE & BOMKOMEN if you want unlimited read unli_bom.txt
+    6. FFTSLEEP with random sleep 
 <br/>
 
 # SPECIAL THANKS TO:
