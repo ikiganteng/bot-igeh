@@ -150,7 +150,7 @@ console.log(chalk`
   {bold.cyan
   —————————————————— [INFORMATION] ————————————————————
 
-  [?] {bold.green FFTauto | Using Account/User Target!}
+  [?] {bold.green Comment & Like | Using Hastag!}
 
   ——————————————————  [THANKS TO]  ————————————————————
   [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
