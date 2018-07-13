@@ -29,7 +29,7 @@ const question = [
 {
   type:'input',
   name:'hastag',
-  message:'[>] Insert Hashtag (Without #):',
+  message:'[>] Insert Hashtag (Without #)(Use [|] if more than 1)(jangan dispasi):',
   validate: function(value){
     if(!value) return 'Can\'t Empty';
     return true;
@@ -57,7 +57,7 @@ const question = [
 {
   type:'input',
   name:'sleep',
-  message:'[>] Insert Sleep (In MiliSeconds)',
+  message:'[>] Insert Sleep (In MiliSeconds):',
   validate: function(value){
     value = value.match(/[0-9]/);
     if (value) return true;
@@ -134,9 +134,10 @@ const doMain = async (account, hastag, sleep, text, mysyntx) => {
   console.log(chalk`{yellow \n [?] Try to Login . . .}`)
   account = await doLogin(account);
   console.log(chalk`{green [!] Login Success!}`)
-  const feed = new Client.Feed.TaggedMedia(account.session, hastag);
-  console.log(chalk`{cyan  [?] Try to Follow, Like and Comment All Account In Hashtag: #${hastag}}`);
-  try {
+   try {
+  const ranhastag = hastag[Math.floor(Math.random() * hastag.length)];
+  const feed = new Client.Feed.TaggedMedia(account.session, ranhastag);
+  console.log(chalk`{cyan  [?] Try to Follow, Like and Comment All Account In Hashtag: #${ranhastag}}`);
     var cursor;
     var count = 0;
     console.log(chalk`{yellow \n [#][>] START WITH RATIO ${mysyntx}/${sleep} MiliSeconds [<][#] \n}`)
@@ -184,9 +185,10 @@ console.log(chalk`
 inquirer.prompt(question)
 .then(answers => {
   var text = answers.text.split('|');
+  var hastag = answers.hastag.split('|');
   doMain({
     username:answers.username, 
-    password:answers.password}, answers.hastag, answers.sleep, text,answers.mysyntx);
+    password:answers.password},hastag,answers.sleep,text,answers.mysyntx);
 })
 .catch(e => {
   console.log(e);
