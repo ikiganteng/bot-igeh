@@ -8,8 +8,8 @@
 <br/>
 
 # For PC/Laptop ONLY:
-	* Download GIT for Windows	(https://git-scm.com/download/) *Choose WIN & 32bit/64bit
-	* Download NodeJS 			(https://nodejs.org/en/download/) *Choose .msi & 32bit/64bit
+	* Download GIT for Windows (https://git-scm.com/download/) *Choose WIN & 32bit/64bit
+	* Download NodeJS (https://nodejs.org/en/download/) *Choose .msi & 32bit/64bit
 	* INSTALL GIT for Windows & NodeJS
 	* Download File on Github (https://github.com/ikiganteng/bot-igeh)
 	* Extract File bot-igeh and enter the folder
