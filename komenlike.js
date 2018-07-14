@@ -95,8 +95,8 @@ const doAction = async (session, params, text) => {
            return chalk`{bold.blue Already Liked & Comment}`;
   }
   const task = [
-  doLike(session, params.id),
-  doComment(session, params.id, text)
+  ngeLike(session, params.id),
+  ngeComment(session, params.id, text)
   ];
   var [Like,Comment] = await Promise.all(task);
   Comment = Comment ? chalk`{bold.green SUKSES}` : chalk`{bold.red GAGAL}`;
@@ -124,7 +124,7 @@ const doMain = async (account, hastag, sleep, mysyntx) => {
         var timeNow = new Date();
         timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
         await Promise.all(media.map(async(media)=>{
-			var Text = fs.readFileSync('komen.txt', 'utf8').split('|');
+	var Text = fs.readFileSync('komen.txt', 'utf8').split('|');
           const resultAction = await doAction(account.session, media.params, Text);
           console.log(chalk`[{magenta ${timeNow}}] ${media.id} | {cyanBright @${media.params.account.username}} \n=> ${resultAction}`);
         }))
