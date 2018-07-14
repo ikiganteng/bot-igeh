@@ -36,7 +36,7 @@
 	
 <br/>
 
-# For VPS:
+# For VPS/CodeAnywhere:
 	* sudo yum -y update
 	* sudo yum -y install git
 	* sudo yum -y install unzip
