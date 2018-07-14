@@ -5,6 +5,8 @@ const _ = require('lodash');
 const rp = require('request-promise');
 const S = require('string');
 const inquirer = require('inquirer');
+var fs = require('fs'),
+    request = require('request');
 
 const question = [
 {
