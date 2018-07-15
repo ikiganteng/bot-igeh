@@ -214,8 +214,8 @@ console.log(chalk`
   {bold.cyan
   —————————————————— [INFORMATION] ————————————————————
 
-  [?] {bold.green FFTauto | Using Account/User Target!}
-  [?] {bold.green Follow, Comment, DM & Like}
+  [?] {bold.green Using Account/User Target!}
+  [?] {bold.green Comment, DM & Like}
   [?] {bold.green Gunakan komen.txt untk komen!}
   
   ——————————————————  [THANKS TO]  ————————————————————
