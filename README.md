@@ -1,3 +1,6 @@
+# ![Image](instagram.png) Instagram NODE JS API V1
+
+
 # How to install (DEFAULT or BASIC USAGE)
 	* git clone https://github.com/ikiganteng/bot-igeh
 	* cd bot-igeh
