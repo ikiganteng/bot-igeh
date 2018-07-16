@@ -1,4 +1,4 @@
-# ![Image](instagram.png) Instagram NODE JS API V1
+# ![Image](icons8-instagram-50.png) Instagram NODE JS API V1
 <br/>
 
 ## How to install (DEFAULT or BASIC USAGE)
