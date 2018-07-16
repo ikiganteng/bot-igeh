@@ -1,5 +1,5 @@
 # ![Image](instagram.png) Instagram NODE JS API V1
-
+<br/>
 
 ## How to install (DEFAULT or BASIC USAGE)
 	* git clone https://github.com/ikiganteng/bot-igeh
@@ -10,7 +10,7 @@
 	* or node filename (to facilitate)
 <br/>
 
-# For PC/Laptop ONLY:
+## For PC/Laptop ONLY:
 	* Download GIT for Windows (https://git-scm.com/download/) *Choose WIN & 32bit/64bit
 	* Download NodeJS (https://nodejs.org/en/download/) *Choose .msi & 32bit/64bit
 	* INSTALL GIT for Windows & NodeJS
@@ -24,7 +24,7 @@
 	* or node filename (to facilitate)
 <br/>
 
-# For TERMUX ONLY:
+## For TERMUX ONLY:
 	* Install Termux (PlayStore)
 	* Open Termux and Wait for Automatic Install of Termux.
 	* pkg install git
@@ -39,7 +39,7 @@
 	
 <br/>
 
-# For CodeAnywhere/VPS (Centos):
+## For CodeAnywhere/VPS (Centos):
 	* sudo yum -y update
 	* sudo yum -y install git
 	* sudo yum -y install unzip
@@ -73,7 +73,7 @@
 	* screen -list
 <br/>
 
-# INFORMATION:
+## INFORMATION:
 	* dellallphoto			"DELETE ALL POST IG"			(WORK & TESTED)
 	* fah				"SELECTED WITH HASTAG IG"		(WORK & TESTED)
 	* fftsleep			"SELECTED WITH TARGET IG"		(WORK & TESTED)
@@ -92,15 +92,17 @@
 	* bomkomen			"BOM KOMEN POST TARGET"			(WORK & TESTED)
 	* likekomen			"SELECTED WITH POST TARGET"		(WORK & TESTED)
 	* komenlike			"SELECTED WITH HASTAG TARGET"		(WORK & TESTED)
+	* cdl				"SELECTED WITH TARGET IG"		(WORK & TESTED)
+
 <br/>
 
-# WARNING
+## WARNING
 	"Use tools at your own risk!!!"
 	"Use this Tool for personal use, not for sale!!!"
 	"Make sure your account is not in private to use this tool!!!"
 <br/>
 
-# UPDATE
+## UPDATE
     1. Fix Error No Detect Followers Target
     2. Input Target/delay Manual (ITTYW)
     3. + Improvements In Display Program
@@ -109,7 +111,7 @@
     6. FFTSLEEP with random sleep 
 <br/>
 
-# SPECIAL THANKS TO:
+## SPECIAL THANKS TO:
 	* Code by Ccocot (ccocot@bc0de.net)
 	* Fixing and Testing by Putu Syntax
 	* SGB TEAM REBORN
