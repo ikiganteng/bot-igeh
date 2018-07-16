@@ -96,7 +96,7 @@ async function Ngecek(session, users){
 
 const test = async function(session, accountId){
     const task = [
-    Ngecek(session, accountId),
+    Ngecek(session, accountId)
     ]
     const [Check] = await Promise.all(task);
     const printCheck = Check ? chalk`{red Not Available}` : chalk`{green Available}`;
