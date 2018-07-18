@@ -75,8 +75,8 @@ function randomString1() {
 
 
 function randomString() {
-	var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-	var string_length = 4; //ubah sesuai keinginanmu
+	var chars = "0123456789abcdefghiklmnopqrstuvwxyz";
+	var string_length = 5; //ubah sesuai keinginanmu
 	var randomstring = '';
 	for (var i=0; i<string_length; i++) {
 		var rnum = Math.floor(Math.random() * chars.length);
@@ -112,7 +112,7 @@ const Excute = async function(User, Sleep, mysyntx){
 	for (var i = 0; i <mysyntx; i++) {
 	var timeNow = new Date();
 	timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
-	var iki = randomString1();
+	var iki = randomString();
     const getTarget = await test(doLogin.session, iki);
 	var fs = require('fs');fs.appendFile('log.txt', `[Username: ${iki}] => ${getTarget} \n`, function (err) {
   if (err) {
