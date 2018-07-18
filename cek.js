@@ -112,9 +112,16 @@ const Excute = async function(User, Sleep, mysyntx){
 	for (var i = 0; i <mysyntx; i++) {
 	var timeNow = new Date();
 	timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
-	var iki = randomString();
+	var iki = randomString1();
     const getTarget = await test(doLogin.session, iki);
-	console.log(chalk`[{magenta ${timeNow}}] {bold.green [>]} [Username: ${iki}] => ${getTarget}`)
+	var fs = require('fs');fs.appendFile('log.txt', `[Username: ${iki}] => ${getTarget} \n`, function (err) {
+  if (err) {
+    // append failed
+  } else {
+    // done
+  }
+})
+	console.log(chalk`\n [{magenta ${timeNow}}] {bold.green [>]} [Username: ${iki}] => ${getTarget}`)
 	console.log(chalk`{yellow \n [#][>] Delay For ${Sleep} MiliSeconds [<][#] \n}`);
 	await delay(Sleep);
 	}
@@ -127,6 +134,7 @@ console.log(chalk`
   —————————————————— [INFORMATION] ————————————————————
 
   [?] {bold.green Check Username Account *AUTO!}
+  [?] {bold.green Save Result to Log.txt}
 
   ——————————————————  [THANKS TO]  ————————————————————
   [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
