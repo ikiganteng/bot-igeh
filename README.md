@@ -5,9 +5,9 @@
 	* git clone https://github.com/ikiganteng/bot-igeh.git
 	* cd bot-igeh
 	* unzip node_modules.zip
-	* node index.js
+	* ls
 	* Then select the tool you want to use!
-	* or node filename (to facilitate)
+	* node filename
 <br/>
 
 ## For PC/Laptop ONLY:
@@ -19,9 +19,8 @@
 	* Right Click on Mouse, Then Select "Git Bash Here" (Make sure you are in the bot-igeh folder!!!)
 	* Then type: unzip node_modules.zip
 	* To View The Contents Of a folder in bash, type: "ls" (without "")
-	* To Run The Program in bash, type: "node index.js" (without "")
 	* Then select the tool you want to use!
-	* or node filename (to facilitate)
+	* node filename
 <br/>
 
 ## For TERMUX ONLY:
@@ -33,9 +32,8 @@
 	* cd bot-igeh
 	* unzip node_modules.zip
 	* ls
-	* node index.js
 	* Then select the tool you want to use!
-	* or node filename (to facilitate)
+	* node filename
 	
 <br/>
 
@@ -51,9 +49,9 @@
 	* git clone https://github.com/ikiganteng/bot-igeh.git
 	* cd bot-igeh
 	* unzip node_modules.zip
-	* node index.js
+	* ls
 	* Then select the tool you want to use!
-	* or node filename (to facilitate)
+	* node filename
 	
 	Kita buat session dulu ya!
 	* screen -S Instagram1 (Instagram1 = Nama Session)
