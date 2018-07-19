@@ -192,7 +192,8 @@ const Excute = async function(User, TargetUsername, Sleep, mysyntx){
           if (!getFollowers.includes(akun.id) && akun.params.isPrivate === false) {
 	    var Text = fs.readFileSync('komen.txt', 'utf8').split('|');
             var ranText = Text[Math.floor(Math.random() * Text.length)];
-            const ngeDo = await CommentAndLike(doLogin.session, akun.id, ranText)
+	    var iki = ranText+' @'+akun.params.username;
+            const ngeDo = await CommentAndLike(doLogin.session, akun.id, iki)
             console.log(chalk`[{magenta ${timeNow}}] {bold.green [>]}${akun.params.username} => ${ngeDo}`)
           } else {
             console.log(chalk`[{magenta ${timeNow}}] {bold.yellow [SKIP]}${akun.params.username} => PRIVATE OR ALREADY FOLLOWED`)
@@ -215,8 +216,6 @@ console.log(chalk`
   —————————————————— [INFORMATION] ————————————————————
 
   [?] {bold.green FFTauto | Using Account/User Target!}
-  [?] {bold.green Gunakan komen.txt untk komen!}
-
 
   ——————————————————  [THANKS TO]  ————————————————————
   [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
@@ -228,7 +227,7 @@ console.log(chalk`
   1. Input Target/delay Manual (ITTYW)
   —————————————————————————————————————————————————————}
       `);
-//ikiganteng
+
 inquirer.prompt(User)
 .then(answers => {
   Excute({
