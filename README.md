@@ -137,4 +137,4 @@
 	* Fixing and Testing by Putu Syntax
 	* SGB TEAM REBORN
 	* BC0DE.NET | NAONLAH.NET - WingKocoli
-	* Ilyasa Fathur Rahman (Tutorial dari VPS)
+	* Ilyasa Fathur Rahman (Tutorial dari VPS Centos)
