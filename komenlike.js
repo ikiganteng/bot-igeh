@@ -39,6 +39,15 @@ const question = [
 },
 {
   type:'input',
+  name:'text',
+  message:'[>] Insert Text Comment (Use [|] if more than 1):',
+  validate: function(value){
+    if(!value) return 'Can\'t Empty';
+    return true;
+  }
+},
+{
+  type:'input',
   name:'mysyntx',
   message:'[>] Input Total of Target You Want (ITTYW):',
   validate: function(value){
@@ -105,7 +114,7 @@ const doAction = async (session, params, text) => {
 }
 
 
-const doMain = async (account, hastag, sleep, mysyntx) => {
+const doMain = async (account, hastag, sleep, text, mysyntx) => {
   console.log(chalk`{yellow \n [?] Try to Login . . .}`)
   account = await doLogin(account);
   console.log(chalk`{green [!] Login Success!}`)
@@ -124,9 +133,9 @@ const doMain = async (account, hastag, sleep, mysyntx) => {
         var timeNow = new Date();
         timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
         await Promise.all(media.map(async(media)=>{
-	var Text = fs.readFileSync('komen.txt', 'utf8').split('|');
-          const resultAction = await doAction(account.session, media.params, Text);
-          console.log(chalk`[{magenta ${timeNow}}] ${media.id} | {cyanBright @${media.params.account.username}} \n=> ${resultAction}`);
+        const ranText = text[Math.floor(Math.random() * text.length)];
+        const resultAction = await doAction(account.session, media.params, ranText);
+        console.log(chalk`[{magenta ${timeNow}}] ${media.id} | {cyanBright @${media.params.account.username}} \n=> ${resultAction}`);
         }))
         console.log(chalk`{yellow \n [#][>] Delay For ${sleep} MiliSeconds [<][#] \n}`)
         await delay(sleep);
@@ -159,9 +168,11 @@ console.log(chalk`
 //ikiganteng
 inquirer.prompt(question)
 .then(answers => {
+  var text = answers.text.split('|');
+  var hastag = answers.hastag.split('|');
   doMain({
     username:answers.username, 
-    password:answers.password}, answers.hastag, answers.sleep,answers.mysyntx);
+    password:answers.password},hastag,answers.sleep,text,answers.mysyntx);
 })
 .catch(e => {
   console.log(e);
