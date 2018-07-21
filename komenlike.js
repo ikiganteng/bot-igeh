@@ -135,7 +135,7 @@ const doMain = async (account, hastag, sleep, text, mysyntx) => {
         await Promise.all(media.map(async(media)=>{
         const ranText = text[Math.floor(Math.random() * text.length)];
         const resultAction = await doAction(account.session, media.params, ranText);
-        console.log(chalk`[{magenta ${timeNow}}] ${media.id} | {cyanBright @${media.params.account.username}} \n=> ${resultAction}`);
+        console.log(chalk`[{magenta ${timeNow}}] {cyanBright @${media.params.account.username}} \n=> ${resultAction}`);
         }))
         console.log(chalk`{yellow \n [#][>] Delay For ${sleep} MiliSeconds [<][#] \n}`)
         await delay(sleep);
