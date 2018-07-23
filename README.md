@@ -71,7 +71,7 @@
 	* screen -list
 <br/>
 
-## For C9/VPS (Ubuntu):
+## For C9/VPS (Ubuntu & Debian):
 	* sudo apt update
 	* sudo apt install git
 	* sudo apt install unzip
@@ -79,18 +79,17 @@
 	* sudo apt install build-essential libssl-dev
 	* curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 	* source ~/.bashrc
-	* nvm install 10.6.0
+	* nvm install 10.7.0
 
 	=========== Basic Usage ==============
 	* git clone https://github.com/ikiganteng/bot-igeh.git
 	* cd bot-igeh
 	* unzip node_modules.zip
-	* nvm use 10.6.0
+	* nvm use 10.7.0
 	* ls
 	* Then select the tool you want to use!
 	* node filename
 <br/>
-
 
 ## INFORMATION:
 	* dellallphoto			"DELETE ALL POST IG"			(WORK & TESTED)
