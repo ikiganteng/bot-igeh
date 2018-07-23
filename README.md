@@ -89,10 +89,12 @@
 	* ls
 	* Then select the tool you want to use!
 	* node filename
+	* untuk buat session sama seperti VPS Centos
 <br/>
 
 ## INFORMATION:
 	* dellallphoto			"DELETE ALL POST IG"			(WORK & TESTED)
+	* fl				"SELECTED WITH TARGET IG"		(WORK & TESTED)
 	* fah				"SELECTED WITH HASTAG IG"		(WORK & TESTED)
 	* fftsleep			"SELECTED WITH TARGET IG"		(WORK & TESTED)
 	* fftdm				"SELECTED WITH TARGET IG"		(WORK & TESTED)
