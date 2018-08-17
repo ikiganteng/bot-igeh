@@ -3,6 +3,7 @@ const delay = require('delay');
 const chalk = require('chalk');
 const _ = require('lodash');
 const rp = require('request-promise');
+const S = require('string');
 const inquirer = require('inquirer');
 
 const User = [
@@ -85,12 +86,13 @@ const Target = async function(link){
 	const url = link+'?__a=1'
 	const option = {
 		url: url,
-		method: 'GET',
-		json:true
+		method: 'GET'
 	}
 	try{
-		const account = await rp(option);
-		return Promise.resolve(account.graphql.shortcode_media.id);
+    const account = await rp(option);
+    const data = S(account).between('<script type="text/javascript">window._sharedData = ', ';</script>').s
+    const json = JSON.parse(data);		
+	return Promise.resolve(json.entry_data.PostPage[0].graphql.shortcode_media.id);
 	} catch (err){
 		return Promise.reject(err);
 	}
