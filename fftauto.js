@@ -216,6 +216,7 @@ console.log(chalk`
   —————————————————— [INFORMATION] ————————————————————
 
   [?] {bold.green FFTauto | Using Account/User Target!}
+  [?] {bold.green Gunakan komen.txt untk komen!}
 
   ——————————————————  [THANKS TO]  ————————————————————
   [✓] CODE BY CYBER SCREAMER CCOCOT (ccocot@bc0de.net)
